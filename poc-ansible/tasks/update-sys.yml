@@ -1,0 +1,19 @@
+---
+- hosts: poc-ansible
+  become: true
+
+  tasks:
+
+  - name: Update apt repos
+    apt:
+      update_cache: yes
+  
+  - name: Update packages to latest version
+    apt:
+      name: "*"
+      state: latest
+
+  - name: Do some cleaning (apt cache ans orphans packages)
+    apt:
+      autoclean: yes
+      autoremove: yes

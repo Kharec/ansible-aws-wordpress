@@ -1,0 +1,10 @@
+---
+
+ntp_enabled: true
+
+ntp_timezone: Europe/Paris
+
+ntp_server1: 0.fr.pool.ntp.org
+ntp_server2: 1.fr.pool.ntp.org
+ntp_server3: 2.fr.pool.ntp.org
+ntp_server4: 3.fr.pool.ntp.org
