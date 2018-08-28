@@ -1,6 +1,0 @@
----
-- hosts: mysql
-  become: true
-
-  roles:
-    - geerlingguy.mysql

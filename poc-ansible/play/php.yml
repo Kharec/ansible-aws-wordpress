@@ -1,6 +1,0 @@
----
-- hosts: php
-  become: true
-
-  roles:
-    - geerlingguy.php

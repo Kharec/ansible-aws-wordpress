@@ -1,6 +1,0 @@
----
-- hosts: apache
-  become: true
-
-  roles:
-    - geerlingguy.apache

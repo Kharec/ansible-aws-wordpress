@@ -1,6 +1,0 @@
----
-- hosts: poc-ansible
-  become: true 
-
-  roles:
-    - geerlingguy.ntp

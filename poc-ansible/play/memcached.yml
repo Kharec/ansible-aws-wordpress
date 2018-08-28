@@ -1,6 +1,0 @@
----
-- hosts: memcached
-  become: true
-
-  roles:
-    - geerlingguy.memcached

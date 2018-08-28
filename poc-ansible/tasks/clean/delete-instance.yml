@@ -1,9 +1,0 @@
----
-- hosts: localhost
-
-  tasks:
-    - name: Delete AWS instance {{ instance_name }}
-      lightsail:
-        state: absent
-        name: "{{ instance_name }}" 
-        region: "{{ instance_region }}"
