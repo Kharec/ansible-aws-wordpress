@@ -1,0 +1,28 @@
+---
+
+- hosts: poc-ansible
+  become: true
+
+  tasks: 
+    - name: Download the latest version of Wordpress
+      get_url: 
+        url: https://fr.wordpress.org/wordpress-{{ wp_version }}-fr_FR.tar.gz
+        dest: /tmp/wordpress.zip
+
+    - name: Unzip Wordpress into /var/www/html/
+      unarchive:
+        src: /tmp/wordpress.zip
+        dest: /var/www/html/
+        remote_src: yes
+
+    - name: Delete the archive
+      file:
+        path: /tmp/wordpress.zip
+        state: absent
+
+    - name: Set correct owner and group on the DocumentRoot
+      file:
+        path: /var/www/html/
+        owner: www-data
+        group: www-data
+        mode: 0755

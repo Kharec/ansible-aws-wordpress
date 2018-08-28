@@ -1,0 +1,17 @@
+- name: geerlingguy.mysql
+  src: geerlingguy.mysql
+
+- name: geerlingguy.memcached
+  src: geerlingguy.memcached
+
+- name: geerlingguy.ntp
+  src: geerlingguy.ntp
+
+- name: geerlingguy.php
+  src: geerlingguy.php
+
+- name: geerlingguy.apache
+  src: geerlingguy.apache
+
+- name: geerlingguy.certbot
+  src: geerlingguy.certbot

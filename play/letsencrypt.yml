@@ -1,0 +1,7 @@
+---
+
+- hosts: letsencrypt
+  become: true
+
+  roles:
+    - geerlingguy.certbot

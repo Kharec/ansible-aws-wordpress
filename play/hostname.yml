@@ -1,0 +1,8 @@
+---
+- hosts: poc-ansible
+  become: true
+
+  tasks:
+    - name: Set the hostname
+      hostname:
+        name: "{{ instance_name }}"

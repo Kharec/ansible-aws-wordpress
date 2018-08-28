@@ -1,0 +1,10 @@
+---
+
+# run playbooks 
+- import_playbook: play/hostname.yml
+- import_playbook: play/ntp.yml
+- import_playbook: play/mysql.yml
+- import_playbook: play/memcached.yml
+- import_playbook: play/php.yml
+- import_playbook: play/letsencrypt.yml
+- import_playbook: play/apache.yml

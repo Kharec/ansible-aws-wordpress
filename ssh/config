@@ -1,0 +1,4 @@
+Host poc-ansible
+  HostName 
+  IdentityFile 
+  User 
