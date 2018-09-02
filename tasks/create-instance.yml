@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+
   tasks:
     - name: Create AWS instance {{ instance_name }} in {{ instance_region }}
       lightsail:
@@ -12,3 +13,6 @@
         key_pair_name: "{{ key_name }}"
         user_data: "sudo apt update && sudo apt install -y python"
         wait_timeout: 1500
+
+    - name: Wait for the instance to be up
+        wait_for: timeout=90
