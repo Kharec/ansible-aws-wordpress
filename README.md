@@ -130,6 +130,8 @@ Ansible is *agentless* but it only needs python to work on the remote server, to
 
 Your ansible setup is totally ready. 
 
+Try it with:
+
 	ansible all -m ping
 	
 	poc-ansible | SUCCESS => {
