@@ -11,4 +11,4 @@
         bundle_id: "{{ instance_bundle }}"
         key_pair_name: "{{ key_name }}"
         user_data: "sudo apt update && sudo apt install -y python"
-        wait_timeout: 4000
+        wait_timeout: 1500
