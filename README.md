@@ -8,8 +8,6 @@ It goes from nothing and do all the job:
 
 	Nothing -> create a lightsail instance -> create a DNS a record for the future wordpress
 
-You will only need to manually install Python on it, in order to permit Ansible to access it.
-
 Then, it will : 
 
 	Install PHP/Apache/MySQL/LetsEncrypt/memcached
