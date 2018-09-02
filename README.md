@@ -126,19 +126,9 @@ Then, we create the DNS.
 
 Your instance is now up and running, your dns is being propagated. 
 
-**You have only one thing to do on the instance before never access it again :)**
+Ansible is *agentless* but it only needs python to work on the remote server, to gather facts among others things. It's installed by the user_data shell script in the create-instance task. 
 
-Connect it via:
-
-	ssh -F ssh/config <servername>
-
-And install Python:
-
-	sudo apt update && sudo apt install -y python
-
-Ansible is *agentless* but it only needs python to work on the remote server, to gather facts among others things.
-
-Once you did it, your ansible setup is totally ready. 
+Your ansible setup is totally ready. 
 
 	ansible all -m ping
 	

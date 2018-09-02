@@ -1,4 +1,4 @@
 Host poc-ansible
-  HostName 
-  IdentityFile 
-  User 
+  HostName 52.214.95.24
+  IdentityFile ssh/mainKey.pem
+  User ubuntu
