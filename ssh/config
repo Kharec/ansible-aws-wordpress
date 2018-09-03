@@ -1,4 +1,4 @@
-Host poc-ansible
+Host ansible-aws-wordpress
   HostName 
   IdentityFile 
   User 

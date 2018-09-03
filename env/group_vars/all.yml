@@ -2,7 +2,7 @@
 
 ip_adress: 52.214.95.24
 
-instance_name: poc-ansible
+instance_name: ansible-aws-wordpress
 instance_region: eu-west-1
 instance_zone: eu-west-1a
 instance_blueprint: ubuntu_16_04

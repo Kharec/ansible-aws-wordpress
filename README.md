@@ -16,7 +16,7 @@ Then, it will :
 	Generate SSL certificate
 	Power up the all thing
 
-This project is named "poc-ansible". You can rename it of course, but be sure you change all the occurences to not break the workflow. See "How to customize" part.
+This project is named "ansible-aws-wordpress". You can rename it of course, but be sure you change all the occurences to not break the workflow. See "How to customize" part.
 
 **Please note:** That is a simple demo of [Ansible](https://ansible.com). It can do so much more. Be sure to visit [Ansible documentation center](http://docs.ansible.com).
 
@@ -71,29 +71,29 @@ To customize this project to feet your needs, you have many entrypoints.
 
 First of all, you have the ssh/config file, whitch is needed to allow the connection. You **have to customize it**, every ssh connection may be different, that's why the file is empty, and present in gitignore file.
 
-	Host poc-ansible # the friendly name you choose for the server (poc-ansible for me)
+	Host ansible-aws-wordpress # the friendly name you choose for the server (ansible-aws-wordpress for me)
 	  HostName 4.5.34.2 # the server IP 
 	  IdentityFile ssh/yourkey.pem # the key you choose to connect it
 	  User ubuntu # the ssh user you want to use
 
-Then, **only if you change the name "poc-ansible"**, modify the env/inventory.ini file like this:
+Then, **only if you change the name "ansible-aws-wordpress"**, modify the env/inventory.ini file like this:
 
-	sed -i 's/poc-ansible/your-server-name/g' env/inventory.ini
+	sed -i 's/ansible-aws-wordpress/your-server-name/g' env/inventory.ini
 
 And all the others files to feet your server name:
 
-	sed -i 's/poc-ansible/your-server-name/g' play/*.yml tasks/*.yml env/group_vars/all.yml
+	sed -i 's/ansible-aws-wordpress/your-server-name/g' play/*.yml tasks/*.yml env/group_vars/all.yml
 
 **Do not forget** to rename also the general host var file:
 
-	cd env/host_vars && mv poc-ansible.yml my-server-name.yml
+	cd env/host_vars && mv ansible-aws-wordpress.yml my-server-name.yml
 
 This is very important to Ansible, so it can see and get your variables.
 
 Finally, you can customize the following files:
 
 	env/group_vars/all.yml
-	env/host_vars/poc-ansible.yml
+	env/host_vars/ansible-aws-wordpress.yml
 
 To choose your needed name, DNS choice, instance type, instance blueprint, IP address, Wordpress version etc.. For all tasks and plays.
  
@@ -132,7 +132,7 @@ Try it with:
 
 	ansible all -m ping
 	
-	poc-ansible | SUCCESS => {
+	ansible-aws-wordpress | SUCCESS => {
    		 "changed": false,
    	 	 "ping": "pong"
 	}

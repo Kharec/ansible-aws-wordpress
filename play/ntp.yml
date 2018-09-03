@@ -1,5 +1,5 @@
 ---
-- hosts: poc-ansible
+- hosts: ansible-aws-wordpress
   become: true 
 
   roles:
