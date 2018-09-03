@@ -15,4 +15,4 @@
         wait_timeout: 1500
 
     - name: Wait for the instance to be up
-        wait_for: timeout=90
+      wait_for: timeout=90
