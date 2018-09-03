@@ -56,6 +56,10 @@ Or if you're a Redhat guy:
 
 	sudo yum install ansible
 
+Or for others:
+
+	sudo pip install --upgrade ansible
+
 Then, just go into the repo and do : 
 
 	bin/requirements.sh 
