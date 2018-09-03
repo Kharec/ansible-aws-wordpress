@@ -107,7 +107,7 @@ So, first thing first, we create the instance:
 
 	ansible-playbook tasks/create-instance.yml
 
-Once your instance is up, get its IP and put it in:
+Once your instance is up (wait ~1m), get its IP and put it in:
 
 	ssh/config
 	env/group_vars/all.yml
