@@ -182,9 +182,9 @@ This will... Oh, I'm sure you get it ;-)
 **As mentionned above,the delete-dns tasks supposes that your DNS in handled in AWS Route53. If not, you'll have to do it manually.**
 
 # Troubleshooting
-AWS Lightsail Ansible module do not allow to change much in your instance parameters. By default, you can only reach your Lightsail instance via HTTP and SSH.
+AWS Lightsail Ansible module does not allow you to change the network parameters of your instance. And by default, you can only reach your Lightsail instance via HTTP and SSH, the HTTPS port is closed.
 
-So you have to add a new rule in the network instance, in the Lightsail console, to let HTTPS trafic reach your server. 
+So you have to add a new rule in the network parameters of your instance, in the Lightsail console, to let HTTPS trafic reach your server. 
 
 Don't forget it if you cannot access your HTTPS page ;-)
 
