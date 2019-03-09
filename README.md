@@ -98,6 +98,7 @@ Finally, you can customize the following files:
 
 	env/group_vars/all.yml
 	env/host_vars/ansible-aws-wordpress.yml
+	env/group_vars/letsencrypt.yml # for the certbot_mail variable
 
 To choose your needed name, DNS choice, instance type, instance blueprint, IP address, Wordpress version etc.. For all tasks and plays.
  
