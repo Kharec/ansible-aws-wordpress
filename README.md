@@ -180,7 +180,7 @@ If you didn't use it to deploy a production (whitch you can btw, just be sure to
 	
 This will... Oh, I'm sure you get it ;-)
 
-**As mentionned above,the delete-dns tasks supposes that your DNS in handled in AWS Route53. If not, you'll have to do it manually.**
+**As mentionned above, the delete-dns tasks supposes that your DNS in handled in AWS Route53. If not, you'll have to do it manually.**
 
 # Troubleshooting
 AWS Lightsail Ansible module does not allow you to change the network parameters of your instance. And by default, you can only reach your Lightsail instance via HTTP and SSH, the HTTPS port is closed.
