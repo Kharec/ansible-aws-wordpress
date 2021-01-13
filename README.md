@@ -191,7 +191,7 @@ Don't forget it if you cannot access your HTTPS page ;-)
 
 # Copyright and license
 
-This software is copyright (c) 2020 by Sandro CAZZANIGA.
+This software is copyright (c) 2021 by Sandro CAZZANIGA.
 
 This is free software; you can redistribute it and/or modify it under the terms of the GNU GPLv3+ license. 
 
