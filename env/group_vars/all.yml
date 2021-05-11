@@ -5,7 +5,7 @@ ip_adress: 52.214.95.24
 instance_name: ansible-aws-wordpress
 instance_region: eu-west-1
 instance_zone: eu-west-1a
-instance_blueprint: ubuntu_16_04
+instance_blueprint: ubuntu_20_04
 instance_bundle: nano_1_0
 key_name: mainKey
 
@@ -14,4 +14,4 @@ ansible_user: ubuntu
 dns_name: wp.kharec.info
 dns_zone: kharec.info
 
-wp_version: 5.4.1
+wp_version: 5.7.1
