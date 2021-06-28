@@ -1,6 +1,6 @@
 ---
-
-- hosts: letsencrypt
+- name: Install and set up certbot
+  hosts: letsencrypt
   become: true
 
   roles:

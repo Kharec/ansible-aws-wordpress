@@ -1,5 +1,6 @@
 ---
-- hosts: php
+- name: Install and setup PHP
+  hosts: php
   become: true
 
   roles:

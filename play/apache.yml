@@ -1,5 +1,6 @@
 ---
-- hosts: apache
+- name : Install and setup apache
+  hosts: apache
   become: true
 
   roles:

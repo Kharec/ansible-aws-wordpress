@@ -1,5 +1,6 @@
 ---
-- hosts: ansible-aws-wordpress
+- name: Set hostname on the instance
+  hosts: ansible-aws-wordpress
   become: true
 
   tasks:

@@ -1,5 +1,6 @@
 ---
-- hosts: memcached
+- name: Install and setup memcached
+  hosts: memcached
   become: true
 
   roles:
