@@ -3,7 +3,7 @@
 
   tasks:
     - name: Create AWS instance {{ instance_name }} in {{ instance_region }}
-      lightsail:
+      community.aws.lightsail:
         state: present
         name: "{{ instance_name }}" 
         region: "{{ instance_region }}"

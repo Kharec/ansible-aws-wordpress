@@ -3,7 +3,7 @@
   
   tasks:
     - name: Create A record in DNS zone {{ dns_zone }}
-      route53:
+      community.aws.route53:
         state: present
         zone: "{{ dns_zone }}"
         record: "{{ dns_name }}"
@@ -12,7 +12,7 @@
         value: "{{ ip_adress }}"
     
     - name: Check record for "{{ dns_name }}"
-      route53:
+      community.aws.route53:
         state: get
         zone: "{{ dns_zone }}"
         record: "{{ dns_name }}"
